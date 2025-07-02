@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter , Routes , Route } from 'react-router-dom'
 import Sentiment from './pages/Sentiment'
+import QuestionAsnwering from './pages/QuestionAsnwering'
+import { Toaster } from 'react-hot-toast'
 
 
 function App() {
@@ -13,9 +15,10 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Sentiment/>} />
+          <Route path='/' element={<QuestionAsnwering/>} />
         </Routes>
       </BrowserRouter>
+      <Toaster/>
     </div>
   )
 }
