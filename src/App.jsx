@@ -5,7 +5,9 @@ import './App.css'
 import { BrowserRouter , Routes , Route } from 'react-router-dom'
 import Sentiment from './pages/Sentiment'
 import QuestionAsnwering from './pages/QuestionAsnwering'
+
 import { Toaster } from 'react-hot-toast'
+import Summarization from './pages/Summerization'
 
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<QuestionAsnwering/>} />
+          <Route path='/' index element={<Sentiment/>} />
+          <Route path='/text-summarization' element={<Summarization/>} />
+          <Route path='/context-answering' element={<QuestionAsnwering/>} />
         </Routes>
       </BrowserRouter>
       <Toaster/>
