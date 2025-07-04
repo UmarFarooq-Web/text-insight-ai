@@ -66,7 +66,7 @@ It combines **three essential Natural Language Processing (NLP)** tools in one i
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/text-tool-app.git
+git clone https://github.com/UmarFarooq-Web/text-insight-ai
 cd text-tool-app
 npm install
 npm run dev
